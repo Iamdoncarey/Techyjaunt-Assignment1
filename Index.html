@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techyjaunt First Assignment</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .link a{
+            color: green;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p a:hover{
+            color: orange;
+        }
+
+        h1{
+            background-color: green;
+            padding: 30px;
+            margin: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My First Page</h1>
+    
+    <br>
+    <section class="link">
+        <a href="#web-contents">Web Contents</a>
+        <a href="#Information-table">Information Table</a>
+        <a href="#contact-form">Contact Form</a>
+    </section>
+
+    <br><br>
+    <img src="Images/sunset.jpg" alt="Sunset image" width="800">
+
+    <p>This is a sample paragraph describing the content of the webpage.
+        It explains the purpose of the page and provides some basic Information
+        about what users can expect to find.
+    </p>
+
+    <p> <a href="https://www.techyjaunt.com/" target="_blank">Visit Techyjaunt</a></p>
+
+    <section id="web-contents">
+        <h2>Web Contents</h2>
+        <ul>
+            <li>Introduction</li>
+            <li>Table of Information</li>
+            <li>Contact Form</li>
+        </ul>
+    </section>
+
+    <br><br>
+    <section id="Information-table">
+        <h2>Information Table</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Items</th>
+                <th>Description</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Pens</td>
+                <td>Blue ink Pens</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Notebooks</td>
+                <td>Spiral-bound notebooks</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Markers</td>
+                <td>Permanent markers</td>
+                <td>2</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact-form">
+        <h2>Contact Form</h2>
+        <br>
+        <form>
+            <label>Name</label>  <input type="Name"> <br><br>
+            <label>Email</label>  <input type="email"> <br><br>
+            <label>Password</label>  <input type="password"> <br><br>
+            <label>Gender: </label>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="Female" name=Gender value="female">
+            <label for="Female">Female</label> <br><br>
+            <label>Subscribe</label> <input type="checkbox" id="Subscribe" name="Subscribe">
+            <label for="subscribe">Yes, I want to subscribe</label> <br><br>
+            <label for="number">Number of Items:</label>
+            <input type="number" id="number" name="number" min="1" max="10000" value="0"> 
+            <br><br>
+
+            <label>Date</label>
+            <input type="date"> <br><br>
+            <label for="message" style="display: block; margin: px;">Message:</label>
+            <textarea rows="3" cols="25"></textarea>
+
+        </form>
+
+    </section>
+</body>
+</html>
